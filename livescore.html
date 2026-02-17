@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Score | Shivjayanti Treasure Hunt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0f2027, #000000 70%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-family: 'Poppins', sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .title {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: #00f7ff;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      opacity: 0.85;
+    }
+
+    .event {
+      margin-top: 18px;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .card {
+      margin-top: 40px;
+      padding: 30px 20px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 40px rgba(0, 247, 255, 0.25);
+      animation: pulseGlow 3s infinite ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0% { box-shadow: 0 0 25px rgba(0,247,255,0.2); }
+      50% { box-shadow: 0 0 45px rgba(0,247,255,0.6); }
+      100% { box-shadow: 0 0 25px rgba(0,247,255,0.2); }
+    }
+
+    .card h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .live-btn {
+      width: 100%;
+      padding: 15px;
+      border-radius: 14px;
+      border: none;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      color: #000;
+      background: linear-gradient(135deg, #00f7ff, #00ffa6);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .live-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 0 30px rgba(0, 247, 255, 0.8);
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="title">Chhatrapati Shivaji Maharaj University</div>
+    <div class="subtitle">Shivjayanti 2026</div>
+    <div class="event">Treasure Hunt</div>
+
+    <div class="card">
+      <h3>Live Score</h3>
+      <button class="live-btn" onclick="goLive()">
+        SEE LIVE SCORE
+      </button>
+    </div>
+
+    <footer>
+      © Shivjayanti 2026 | Treasure Hunt <br>
+      Created by Sahil Salunkhe
+    </footer>
+
+  </div>
+
+  <script>
+    function goLive() {
+      // Next page: live score dashboard
+      window.location.href = "liveescoree.html";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Score Dashboard | Shivjayanti Treasure Hunt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #020024, #090979, #000000);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 18px;
+      color: #00f7ff;
+    }
+
+    .header h2 {
+      font-size: 15px;
+      opacity: 0.85;
+    }
+
+    .header h3 {
+      margin-top: 12px;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+
+    .dashboard-title {
+      text-align: center;
+      margin-bottom: 25px;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 20px;
+      color: #00ffa6;
+    }
+
+    .team-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.25);
+  min-height: 130px;
+}
+
+
+    .team-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #00f7ff;
+    }
+
+    .score-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 14px 16px;
+      border-radius: 14px;
+    }
+
+    .score-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    .score {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 30px;
+      color: #00ffa6;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Chhatrapati Shivaji Maharaj University</h1>
+  <h2>Shivjayanti 2026</h2>
+  <h3>Treasure Hunt</h3>
+</div>
+
+<div class="dashboard-title">Live Score Dashboard</div>
+
+<div class="container">
+
+
+  <!-- Team A -->
+  <div class="team-card">
+    <div class="team-name">Team Clue-Less</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamA">0</div>
+    </div>
+  </div>
+
+  <!-- Team B -->
+  <div class="team-card">
+    <div class="team-name">Team B</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamB">0</div>
+    </div>
+  </div>
+
+  <!-- Team C -->
+  <div class="team-card">
+    <div class="team-name">Team C</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamC">0</div>
+    </div>
+  </div>
+
+  <!-- Team D -->
+  <div class="team-card">
+    <div class="team-name">Team D</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamD">0</div>
+    </div>
+  </div>
+
+  <!-- Team E -->
+  <div class="team-card">
+    <div class="team-name">Team E</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamE">0</div>
+    </div>
+  </div>
+
+  <!-- Team F -->
+  <div class="team-card">
+    <div class="team-name">Team F</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamF">0</div>
+    </div>
+  </div>
+
+  <!-- Team G -->
+  <div class="team-card">
+    <div class="team-name">Team G</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamG">0</div>
+    </div>
+  </div>
+
+  <!-- Team H -->
+  <div class="team-card">
+    <div class="team-name">Team H</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamH">0</div>
+    </div>
+  </div>
+
+  <!-- Team I -->
+  <div class="team-card">
+    <div class="team-name">Team I</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamI">0</div>
+    </div>
+  </div>
+
+  <!-- Team J -->
+  <div class="team-card">
+    <div class="team-name">Team J</div>
+    <div class="score-box">
+      <div class="score-text">Cards Collected</div>
+      <div class="score" id="teamJ">0</div>
+    </div>
+  </div>
+
+  <footer>
+    © Shivjayanti 2026 | Treasure Hunt <br>
+    By Sahil Salunkhe
+  </footer>
+
+</div>
+
+
+ 
+
+<script>
+  // 🔴 PASTE YOUR APPS SCRIPT WEB APP URL
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwa-YXp-WXC9FosIKGxkvJCW2ChKgF9QB-sRvypwDOHNGh_zD3XJC2iiK8W5uiiCcUcaw/exec";
+
+function loadScores() {
+  fetch(SCRIPT_URL)
+    .then(res => res.json())
+    .then(data => {
+
+      document.getElementById("teamA").textContent = data["Team A"] || 0;
+      document.getElementById("teamB").textContent = data["Team B"] || 0;
+      document.getElementById("teamC").textContent = data["Team C"] || 0;
+      document.getElementById("teamD").textContent = data["Team D"] || 0;
+      document.getElementById("teamE").textContent = data["Team E"] || 0;
+      document.getElementById("teamF").textContent = data["Team F"] || 0;
+      document.getElementById("teamG").textContent = data["Team G"] || 0;
+      document.getElementById("teamH").textContent = data["Team H"] || 0;
+      document.getElementById("teamI").textContent = data["Team I"] || 0;
+      document.getElementById("teamJ").textContent = data["Team J"] || 0;
+
+    })
+    .catch(err => {
+      console.error("Fetch error:", err);
+    });
+}
+
+
+  // Initial load
+  loadScores();
+
+  // Auto refresh every 10 seconds
+  setInterval(loadScores, 10000);
+</script>
+
+</body>
+</html>
